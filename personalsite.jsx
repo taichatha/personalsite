@@ -20,7 +20,7 @@ if(Meteor.isClient){
         <div>
         	<header>
         	  <h1>TC</h1>
-        	  <p> <Link to="/about">about</Link> <Link to="/services">services</Link> <Link to="/portfolio">portfolio</Link> <Link to="/cv">cv</Link> </p>
+        	  <p> <Link to="/about">about</Link> <Link to="/portfolio">portfolio</Link> <Link to="/cv">cv</Link> </p>
         	</header>
         	{this.props.children}
         </div>
@@ -68,9 +68,8 @@ if(Meteor.isClient){
       return (
         <Router history={browserHistory}>
           <Route path="/" component={App}>
-            <IndexRoute component={Index}/>
+            <IndexRoute component={About}/>
             <Route path="about" component={About}/>
-            <Route path="services" component={Services}/>
             <Route path="portfolio" component={Portfolio}/>
           	<Route path="cv" component={CV}/>
           </Route>

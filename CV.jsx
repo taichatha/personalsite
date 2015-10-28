@@ -1,7 +1,7 @@
 CV = React.createClass({
 	render(){
 		return(
-			<div className="CV">
+			<div className="main">
 				<h1>General Info</h1>
 				<ul>
 					<li>Name: Taimoor Chatha</li>

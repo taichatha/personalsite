@@ -8,16 +8,17 @@ Project = React.createClass({
 
 	render(){
 		return(
-			<div className={this.props.project.name}>
+			<div className="project">
 				<h1>{this.props.project.name}</h1>
-				<br/>
-				<img className="preview" src={this.props.project.img}></img>
+				{//<img className="preview" src={this.props.project.img}></img>
+			}
 				<br/>
 				<span className="descr">Info: {this.props.project.desc}</span>
 				
 				<br />
-				
-				<a className="repo" href={this.props.project.repo}>Repo</a> <a className="deploy" href={this.props.project.url}>Live</a>
+				<span className="tech">Tech: {this.props.project.tools}</span>
+				<br />
+				<a className="repo" href={this.props.project.repo}>Repo</a> {this.props.project.url ? <a className="deploy" href={this.props.project.url}>Live</a> : '' }
 				
 			</div>
 

@@ -1,6 +1,14 @@
 /* CSS declarations go here */
+@font-face {
+  font-family: bebas;
+  src: url("/BebasNeue.otf");
+}
+@font-face {
+  font-family: roboto;
+  src: url("/roboto/Roboto-Light.ttf");
+}
 body {
-  font-family: sans-serif;
+  font-family: roboto;
   background-color: #315481;
   background-image: linear-gradient(to bottom, #315481, #918e82 100%);
   background-attachment: fixed;
@@ -24,6 +32,24 @@ body {
   background: white;
 }
 
+a:link {
+
+  color: #33CCFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #33CCCC;
+  text-decoration: none;
+
+}
+
+
+a:visited {
+
+  color: #000099;
+  text-decoration: none;
+}
 header {
   background: #d2edf4;
   background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
@@ -31,15 +57,93 @@ header {
   position: relative;
   text-align: center;
 }
+header h1{
+  font-size: 30px;
 
-.main {
-  margin-top: 20px;
+}
+.project{
+  text-align: left;
   background: #d2edf4;
   background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
   padding: 20px 15px 15px 15px;
-  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.main {
+  font-family: roboto;
+  font-size: 18px;
+ 
+  margin: 10px auto;
+  
+  
 }
 
+.portfolio {
+  font-family: roboto;
+  font-size: 18px;
+  text-align: center;
+  margin: 10px auto;
+  color: #63C7B2; 
+
+}
+
+.portfolio h1 {
+  
+  
+
+}
+
+.main h1{
+  font-family: roboto;
+  font-size: 30px;
+  color: #63C7B2;
+}
+.main p {
+  font-family: bebas;
+  color: #263D42;
+  
+  
+}
+
+.about {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 10px;
+  background: #d2edf4;
+  background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
+  padding: 20px 15px 15px 15px;
+}
+
+.services {
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  text-align:  center;
+  background: #d2edf4;
+  background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
+  padding: 20px 15px 15px 15px;
+}
+
+.services span{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.contact {
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  text-align:  center;
+  background: #d2edf4;
+  background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
+  padding: 20px 15px 15px 15px;
+
+}
+.contact a {
+  padding: 10px;
+}
 #login-buttons {
   display: block;
 }
@@ -82,7 +186,6 @@ table {
 ul {
   margin: 0;
   padding: 0;
-  background: white;
 }
 
 .delete {
@@ -98,7 +201,7 @@ li {
   position: relative;
   list-style: none;
   padding: 15px;
-  border-bottom: #eee solid 1px;
+  
 }
 
 li .text {
