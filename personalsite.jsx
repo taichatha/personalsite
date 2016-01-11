@@ -17,10 +17,10 @@ if(Meteor.isClient){
     },
     render: function() {
       return (
-        <div>
+        <div className="theIsh">
         	<header>
         	  <h1>TC</h1>
-        	  <p> <Link to="/about">about</Link> <Link to="/portfolio">portfolio</Link> <Link to="/cv">cv</Link> </p>
+        	  <p> <Link to="/about">about</Link> <Link to="/portfolio">projects</Link> </p>
         	</header>
         	{this.props.children}
         </div>
