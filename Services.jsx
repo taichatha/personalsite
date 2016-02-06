@@ -1,20 +1,20 @@
 Services = React.createClass({
-
-	render(){
-		return(
-
-			<div className="main">
-				<h1>Services</h1>
-				<h3>What I provide:</h3>
-				<ul>
-					<li>Web Design/Development</li>
-					<li>Mobile App Design/Development</li>
-					<li>Software Consulting</li>
-				</ul>
-			</div>
-
-			);
-
+	render() {
+		return (
+			<tr>
+				<td className="title">
+					<div>
+						<h1>SERVICES</h1>
+					</div>									
+				</td>
+				<td className="desc">
+					<div >
+						<span>Web/Mobile Development | </span> 
+						<span>Software Consulting</span>
+					</div>
+				</td>	
+			</tr>
+			)
 	}
-		
+
 });

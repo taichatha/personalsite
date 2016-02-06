@@ -1,33 +1,92 @@
-/* CSS declarations go here */
 @font-face {
   font-family: bebas;
   src: url("/BebasNeue.otf");
 }
+
 @font-face {
   font-family: roboto;
   src: url("/roboto/Roboto-Light.ttf");
 }
-body {
-  font-family: roboto;
-  background-color: #315481;
-  background-image: linear-gradient(to bottom, #315481, #918e82 100%);
-  background-attachment: fixed;
 
+body {
+  height: 100%;
+  background-image: url(imgs/awe.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: roboto;
+  background-attachment: fixed;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-
   padding: 0;
-  margin: 0;
-
+  margin-bottom: 10px;
+  margin: 0 auto;
   font-size: 14px;
+}
+
+.tile-even, .tile-odd {
+  display: table;
+  position: relative;
+  margin-bottom: 2em;
+  padding: 2em;
+  clear: both;  
+}
+
+.tile-even .title {
+  display: table-cell;
+  float: left;
+  position: relative;
+  overflow:auto;
+  margin-right: 20px;
+  width: 50%;
+  
+}
+
+.tile-even .desc {
+  display: table-cell;
+  position: relative;
+  float: left;
+  margin-left: 20px;
+  text-align: left;
+  width: 50%;
+  
+}
+
+.tile-odd .title {
+  display: table-cell;
+  position: relative;
+  float: left;
+  text-align: center;
+  vertical-align: center;  
+  /*margin-left: 20px;*/
+  width: 50%;
+}
+
+.tile-odd .desc {
+  position: relative;
+  display: table-cell;
+  float: left;
+  margin-right: 20px;
+  text-align: left;
+  width: 50%;
+}
+
+td.title {
+  width: 50%;
+  border-right: solid 1px black;
+}
+
+td.desc {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .theIsh {
   height: 100%;
 }
+
 .container {
   max-width: 600px;
   margin: 0 auto;
@@ -35,9 +94,7 @@ body {
   background: white;
 }
 
-/*project text */
 .descr {
-
   color: #124141;
 }
 
@@ -46,7 +103,6 @@ body {
 }
 
 a:link {
-
   color: #33CCFF;
   text-decoration: none;
 }
@@ -54,26 +110,29 @@ a:link {
 a:hover {
   color: #33CCCC;
   text-decoration: none;
-
 }
 
 
 a:visited {
-
   color: #000099;
   text-decoration: none;
 }
+
 header {
   background: #d2edf4;
   background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
+  border-bottom: 5px;
+  border-color: #fff;
+  border: bold;
   padding: 20px 15px 15px 15px;
   position: relative;
   text-align: center;
 }
+
 header h1{
   font-size: 30px;
-
 }
+
 .project{
   text-align: left;
   background: #d2edf4;
@@ -82,52 +141,35 @@ header h1{
   width: 70%;
   margin: 0 auto;
   margin-bottom: 10px;
+  border-color: #000;
+  border-style: bold;
+  border: 10px;
 }
 
-html, body { height: 100%;}
+html { height: 100%;}
+
 .main {
   font-family: roboto;
   font-size: 18px;
   height: 100%;
-  margin: 10px auto;
-  
-  
+  margin: 0 auto;  
 }
 
 .portfolio {
   font-family: roboto;
   font-size: 18px;
   text-align: center;
-  margin: 10px auto;
   color: #63C7B2; 
-
 }
 
 .zWrapper {
   width: 60%;
   height: 100%;
   background-color: #124141;
+  padding-top: 20px;
   margin: 0 auto;
-  padding: 30px 10px 10px 10px;
   opacity: .8;
   text-align: center;
-}
-
-.projectsTitle {
-  color: #2ec4b6;
-  text-align: center;
-  padding: 20px 20px 20px 20px;
-}
-.main h1{
-  font-family: roboto;
-  font-size: 30px;
-  color: #63C7B2;
-}
-.main p {
-  font-family: bebas;
-  color: #263D42;
-  
-  
 }
 
 .zWrapper h1{
@@ -139,11 +181,27 @@ html, body { height: 100%;}
 .zWrapper span {
   font-faimly: bebas;
   color: #263D42;
-  font-size: 15px;
+}
+
+.projectsTitle {
+  color: #2ec4b6;
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+}
+
+.main h1{
+  font-family: roboto;
+  font-size: 30px;
+  color: #63C7B2;
+}
+
+.big-photo {
+  margin: 0 auto;
 }
 
 .about {
   width: 90%;
+  height:33%;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 10px;
@@ -162,10 +220,6 @@ html, body { height: 100%;}
   padding: 20px 15px 15px 15px;
 }
 
-.services span{
-  padding-right: 10px;
-  padding-left: 10px;
-}
 
 .contact {
   width: 80%;
@@ -175,13 +229,10 @@ html, body { height: 100%;}
   background: #d2edf4;
   background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
   padding: 20px 15px 15px 15px;
-
 }
+
 .contact a {
   padding: 10px;
-}
-#login-buttons {
-  display: block;
 }
 
 h1 {
@@ -199,73 +250,4 @@ form {
 
 table {
   border: solid;
-
-  
-
-}
-
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-.delete {
-  float: right;
-  font-weight: bold;
-  background: none;
-  font-size: 1em;
-  border: none;
-  position: relative;
-}
-
-li {
-  position: relative;
-  list-style: none;
-  padding: 15px;
-  
-}
-
-li .text {
-  margin-left: 10px;
-}
-
-li .reps {
-  text-align: right;
-}
-
-li.checked {
-  color: #888;
-}
-
-li.checked .text {
-  text-decoration: line-through;
-}
-
-li.private {
-  background: #eee;
-  border-color: #ddd;
-}
-
-header .hide-completed {
-  float: right;
-}
-
-.toggle-private {
-  margin-left: 5px;
-}
-
-@media (max-width: 600px) {
-  li {
-    padding: 12px 15px;
-  }
-
-  .search {
-    width: 150px;
-    clear: both;
-  }
-
-  .new-task input {
-    padding-bottom: 5px;
-  }
 }

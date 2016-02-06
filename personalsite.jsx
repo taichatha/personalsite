@@ -19,8 +19,8 @@ if(Meteor.isClient){
       return (
         <div className="theIsh">
         	<header>
-        	  <h1>TC</h1>
-        	  <p> <Link to="/about">about</Link> <Link to="/portfolio">projects</Link> </p>
+        	  <h1><Link to="/">TC</Link></h1>
+        	  <p><Link to="/portfolio">projects</Link> </p>
         	</header>
         	{this.props.children}
         </div>
@@ -28,37 +28,7 @@ if(Meteor.isClient){
     }
   });
 
-  // The view to displayed as the index view
-  Index = React.createClass({
-    getInitialState: function() {
-      return {};
-    },
-    render: function() {
-      return (
-        <div>
-          <p>This is the index route.</p>
-          <Link to="/foo">Show me your foo.</Link>
-          
-        </div>
-      );
-    }
-  });
-
-  // A view for a route
-  Foo = React.createClass({
-    getInitialState: function() {
-      return {};
-    },
-    render: function() {
-      return (
-        <div>
-          <p>This is my foo.</p>
-          <Link to="/">Now go home</Link>
-        </div>
-      );
-    }
-  });
-
+  
   // The component with all of the routes
   Routes = React.createClass({
     getInitialState: function() {
@@ -68,10 +38,8 @@ if(Meteor.isClient){
       return (
         <Router history={browserHistory}>
           <Route path="/" component={App}>
-            <IndexRoute component={About}/>
-            <Route path="about" component={About}/>
+            <IndexRoute component={Home}/>
             <Route path="portfolio" component={Portfolio}/>
-          	<Route path="cv" component={CV}/>
           </Route>
         </Router>
       );
